@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
-    <title>HTML layout</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css">
+        <title>HTML layout</title>
+    </head>
 
-<header>
-    This is my header
-</header>
+    <header>
+        This is my header
+    </header>
 
-<body>
-    
-    <div id="mySidenav" class="sidenav">
-        <p>About</p>
-        <p>Services</p>
-        <p>Clients</p>
-        <p>Contact</p>
-    </div>
-
-    <span style="font: 30px;cursor: pointer;" onclick="openNav()">&#9776; open</span>
-
-    <script>
+    <body>
         
-        function openNav(){
-            document.getElementById("mySideNav").style.width = "100%"
-        }
+        <div id="mySidenav" class="sidenav">
+            <p>About</p>
+            <p>Services</p>
+            <p>Clients</p>
+            <p>Contact</p>
+        </div>
 
-        function closeNav(){
-            document.getElementById("mySideNav").style.width = "0"
-        }
+        <script>
+            
+            function openNav(){
+                document.getElementById("mySideNav").style.width = "100%"
+            }
 
-    </script>
+            function closeNav(){
+                document.getElementById("mySideNav").style.width = "0"
+            }
 
-</body>
+        </script>
+
+        <span style="font: 30px;cursor: pointer;" onclick="openNav()">&#9776; open</span>
+
+    </body>
+
 </html>
