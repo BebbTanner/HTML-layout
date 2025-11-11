@@ -13,12 +13,24 @@
 
 <body>
     
-    <div class="sidenav">
+    <div id="mySidenav" class="sidenav">
         <p>About</p>
         <p>Services</p>
         <p>Clients</p>
         <p>Contact</p>
     </div>
+
+    <script>
+        
+        function openNav(){
+            document.getElementById("mySideNav").style.width = "100%"
+        }
+
+        function closeNav(){
+            document.getElementById("mySideNav").style.width = "0"
+        }
+
+    </script>
 
 </body>
 </html>
